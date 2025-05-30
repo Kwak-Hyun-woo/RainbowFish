@@ -108,6 +108,7 @@ python fish_displacement.py
 We merge all meshes including school of fishes and background assets by using `Blender`
 
 ### Rendering 
+If you want to render our final result without any procedure, then load [this file](https://drive.google.com/file/d/1A7hphlVOOMHZ908SQGgQhv72lVoyUFkZ/view?usp=sharing), unzip this file and place `final.glb`, and `final_2.glb` at `$PROJECT_ROOT$/data/`. First, you need to try with `final.glb`. if you have some problem about compatibility, then you can try with `final_2.glb`.
 ```
 cd $PROJECT_ROOT$
 conda activate hunyuan3d 

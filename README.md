@@ -48,6 +48,7 @@ pip install pyopengl
 You might face difficulty in installing pytorch3d or encounter the error `ModuleNotFoundError: No module named pytorch3d` during run time. Unfortunately, this is because pytorch3d could not be installed properly. Please refer [here](https://github.com/facebookresearch/pytorch3d/blob/main/INSTALL.md) for alternate ways to install pytorch3d.
 
 ## Run
+### Generation
 #### 2D Fish Images Generation
 ```
 cd $PROJECT_ROOT$/Generation
@@ -91,6 +92,7 @@ sh resize_all.sh
 
 #### Color Sorting
 ```
+conda activate hunyuan3d
 cd $PROJECT_ROOT$/Displacement
 python compute_HSV.py
 ```
@@ -104,9 +106,28 @@ python fish_displacement.py
 #### Adding Background(e.g. Coral, Rock)
 
 We merge all meshes including school of fishes and background assets by using `Blender`
+
+### Rendering 
+```
+cd $PROJECT_ROOT$
+conda activate hunyuan3d 
+```
+#### Images
+```
+python render_all.py
+```
+#### Video
+```
+python render_video.py
+```
+Render Image and video save directory: `$PROJECT_ROOT$/data`
 ## References
-Stable Diffusion\
+Code reference about Stable Diffusion\
 https://huggingface.co/learn/cookbook/en/stable_diffusion_interpolation
+
+
+Background remover\
+https://github.com/nadermx/backgroundremover
 
 Diff3F\
 https://github.com/niladridutt/Diffusion-3D-Features 

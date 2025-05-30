@@ -1,0 +1,104 @@
+# Core Deep Learning Framework
+torch>=2.0
+torchvision>=0.15
+pytorch-lightning>=2.0
+torchmetrics>=1.0
+
+# Diffusion and Transformers
+diffusers>=0.21.0
+transformers>=4.30
+xformers>=0.0.20
+accelerate>=0.21.0
+safetensors>=0.3.0
+tokenizers>=0.13.0
+
+# Utility Libraries
+numpy>=1.23
+scipy>=1.10
+einops>=0.6.0
+regex
+tqdm
+packaging
+filelock
+requests
+python-dateutil
+pillow>=9.0.0
+matplotlib-inline
+psutil
+omegaconf>=2.2.0
+fsspec
+ftfy
+glob2
+propcache
+
+# Jupyter/IPython Tools
+ipykernel
+ipython
+ipython_genutils
+jupyter_client
+jupyter_core
+traitlets
+prompt_toolkit
+pyzmq
+decorator
+Pygments
+ptyprocess
+pexpect
+pickleshare
+backcall
+
+# Async HTTP (for web-related tasks)
+aiohttp>=3.8.0
+aiohappyeyeballs
+async-timeout
+aiosignal
+multidict
+yarl
+
+# Rendering or Visual Logic
+sympy
+mpmath
+
+# Serialization & Data
+PyYAML>=6.0
+attrs
+
+# Web and Certificates
+certifi
+charset-normalizer
+idna
+urllib3
+
+# NVIDIA (CUDA 12.x)
+nvidia-cublas-cu12>=12.1
+nvidia-cuda-runtime-cu12>=12.1
+nvidia-cudnn-cu12>=9.1
+nvidia-cusparse-cu12
+nvidia-cusolver-cu12
+nvidia-cufft-cu12
+nvidia-curand-cu12
+nvidia-nccl-cu12
+nvidia-nvjitlink-cu12
+nvidia-nvtx-cu12
+nvidia-cuda-cupti-cu12
+nvidia-cuda-nvrtc-cu12
+
+# Triton (used by Torch 2.x for fused kernels)
+triton>=2.0
+
+# Optional: for code using ANTLR grammar
+antlr4-python3-runtime
+
+# Metadata tools
+zipp
+importlib_metadata
+
+# Markup for templating
+Jinja2
+MarkupSafe
+
+# Type hints
+typing_extensions
+
+# Lightning utilities
+lightning-utilities>=0.9.0

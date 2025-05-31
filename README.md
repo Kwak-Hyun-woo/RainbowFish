@@ -107,8 +107,15 @@ python fish_displacement.py
 
 We merge all meshes including school of fishes and background assets by using `Blender`
 
+#### (Optional) Compress scene to follow contest guideline
+We compress scene from about 700MB to 280MB
+```
+gltf-transform draco $INPUT_SCENE_PATH$ $COMPRESSED_SCENE_PATH$
+```
+
 ### Rendering 
-If you want to render our final result without any procedure, then load [this file](https://drive.google.com/file/d/1A7hphlVOOMHZ908SQGgQhv72lVoyUFkZ/view?usp=sharing), unzip this file and place `final.glb`, and `final_2.glb` at `$PROJECT_ROOT$/data/`. First, you need to try with `final.glb`. if you have some problem about compatibility, then you can try with `final_2.glb`.
+If you want to render our final result without any procedure, then load [this file](https://drive.google.com/file/d/1A7hphlVOOMHZ908SQGgQhv72lVoyUFkZ/view?usp=sharing), unzip this file and place `final.glb`, and `final_2.glb` at `$PROJECT_ROOT$/data/`. First, you need to try with `final.glb`. if you have some problem about compatibility, then you can try with `final_2.glb`.\
+`final.glb` is compressed by `gltf-transform draco`. but `final_2.glb` is not compressed. 
 ```
 cd $PROJECT_ROOT$
 conda activate hunyuan3d 
@@ -122,6 +129,12 @@ python render_all.py
 python render_video.py
 ```
 Render Image and video save directory: `$PROJECT_ROOT$/data`
+
+
+
+## Submission
+
+We submit our 3D content by uploading it to the web which is followed by contest guideline. By running our `server.py` script, the uploaded content can be viewed in the browser, in accordance with Chrome and other browser policies.
 ## References
 Code reference about Stable Diffusion\
 https://huggingface.co/learn/cookbook/en/stable_diffusion_interpolation

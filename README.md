@@ -33,6 +33,7 @@ Please install requirements via the [Hunyuan3D-2](https://github.com/Tencent-Hun
 ### Displacement
 #### Mesh Correspondence
 ```
+cd $PROJECT_ROOT$/Displacement/Diffusion-3D-Features
 conda env create -f environment.yaml
 conda activate diff3f
 ```
